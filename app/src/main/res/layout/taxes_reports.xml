@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/round_corner_text_view"
+    android:orientation="vertical">
+
+    <TableRow>
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="التاريخ"
+            android:textColor="@color/applicationColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tax_value"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="قيمة الضريبة"
+            android:textColor="@color/applicationColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tax"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="نسبة الضريبة"
+            android:textColor="@color/applicationColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cost_with_tax"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="مبلغ الطلب بعد الضريبة"
+            android:textColor="@color/applicationColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="مبلغ الطلب"
+            android:textColor="@color/applicationColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/order_number"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="رقم الطلب"
+            android:textColor="@color/applicationColor"
+            android:textSize="16sp" />
+
+    </TableRow>
+</TableLayout>
+

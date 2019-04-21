@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_categories"
+        android:title="تقارير الاصناف" />
+    <item
+        android:id="@+id/nav_orderInterval"
+        android:title="تقرير طلبات فترة" />
+    <item
+        android:id="@+id/nav_orderDaily"
+        android:title="تقرير طلبات يومي" />
+    <item
+        android:id="@+id/nav_earning"
+        android:title="تقارير الارباح" />
+    <item
+        android:id="@+id/nav_tax"
+        android:title="تقرير الضريبة" />
+    <item
+        android:id="@+id/nav_employees"
+        android:title="تقارير الموظفين" />
+    <item
+        android:id="@+id/nav_clients"
+        android:title="تقارير العملاء" />
+    <item
+        android:id="@+id/nav_cash"
+        android:title="اغلاق النقدية" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="تسجيل الخروج" />
+
+</menu>

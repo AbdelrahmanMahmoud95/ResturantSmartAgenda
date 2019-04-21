@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_table"
+        android:icon="@drawable/table_icon"
+        app:showAsAction="always|withText"
+        android:title="الطاولة" />
+    <item
+        app:showAsAction="always|withText"
+        android:id="@+id/navigation_category"
+        android:icon="@drawable/categories"
+        android:title="الاصناف" />
+
+    <item
+        app:showAsAction="always|withText"
+        android:id="@+id/navigation_basket"
+        android:icon="@drawable/cart"
+        android:title="السلة" />
+
+
+</menu>

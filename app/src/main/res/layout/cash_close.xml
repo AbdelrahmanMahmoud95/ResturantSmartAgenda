@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner_text_view"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/view"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:paddingLeft="2dp"
+            android:src="@drawable/eye" />
+
+        <TextView
+            android:id="@+id/last_time_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight=".33"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="وقت اخر طلب"
+            android:textColor="@color/applicationColor"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/first_time_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight=".33"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="وقت اول طلب"
+            android:textColor="@color/applicationColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight=".33"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="الاسم"
+            android:textColor="@color/applicationColor"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

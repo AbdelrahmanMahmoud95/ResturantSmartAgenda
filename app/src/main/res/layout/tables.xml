@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/table_image"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/table" />
+
+    <TextView
+        android:id="@+id/table_number"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table_image"
+        android:background="@color/applicationColor"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="5"
+        android:textColor="#fff" />
+
+
+
+
+</RelativeLayout>

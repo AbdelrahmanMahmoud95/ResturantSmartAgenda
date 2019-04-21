@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/categories_layout"
+    android:layout_margin="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/categories_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/burger"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/categories_name"
+        android:text="مشويات"
+        android:textColor="#fff"
+        android:padding="4dp"
+        android:gravity="center"
+        android:background="@color/applicationColor"
+        android:layout_below="@+id/categories_image"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

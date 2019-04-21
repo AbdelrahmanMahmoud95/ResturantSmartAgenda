@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.agenda.smart.restaurant.views.RegisterationActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolabar_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/applicationColor"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            android:contentInsetStartWithNavigation="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/resturant_name"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="4dp"
+                    android:gravity="center"
+                    android:text="اسم المطعم"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="6dp"
+                    android:src="@drawable/restaurant_icon" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolabar_holder"
+        android:layout_margin="3dp"
+        android:background="@drawable/round_corner_text_view"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_corner_text_view"
+            android:gravity="center|right"
+            android:hint="اسم المستخدم"
+            android:inputType="textEmailAddress"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/round_corner_text_view"
+            android:gravity="center|right"
+            android:hint="رقم الجوال"
+            android:inputType="number"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/round_corner_text_view"
+            android:gravity="center|right"
+            android:hint="البريد الالكتروني"
+            android:inputType="textEmailAddress"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/round_corner_text_view"
+            android:gravity="center|right"
+            android:hint="كلمة السر"
+            android:inputType="textPassword"
+            android:padding="4dp" />
+
+
+        <LinearLayout
+            android:id="@+id/linear_city"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/round_corner_text_view"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:src="@drawable/arrow_down" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:hint="المدينة"
+                android:padding="4dp"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_region"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/round_corner_text_view"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:src="@drawable/arrow_down" />
+
+            <TextView
+                android:id="@+id/region"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:hint="المنطقة"
+                android:padding="4dp"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/address_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp">
+
+            <RadioButton
+                android:layoutDirection="rtl"
+                android:id="@+id/map_selection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="حدد العنوان من الخريطة"
+                android:textAlignment="viewStart"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:layoutDirection="rtl"
+                android:id="@+id/gps_selection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="العنوان هو مكاني الحالي"
+                android:textDirection="rtl" />
+
+            <RadioButton
+                android:layoutDirection="rtl"
+                android:id="@+id/enter_address_selection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="ادخل عنوانك" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/text_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_corner_text_view"
+            android:gravity="center|right"
+            android:hint="العنوان"
+            android:inputType="text"
+            android:padding="4dp" />
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_corner_button"
+            android:padding="5dp"
+            android:text="تسجيل"
+            android:onClick="register"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

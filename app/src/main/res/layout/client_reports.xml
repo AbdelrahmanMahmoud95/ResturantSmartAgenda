@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/round_corner_text_view">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/net"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="الصافي"
+            android:textColor="@color/applicationColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/returns"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="سعر المرتجعات"
+            android:textColor="@color/applicationColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/sales_cost"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="تكليفة المبيعات"
+            android:textColor="@color/applicationColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="العنوان"
+            android:textColor="@color/applicationColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="رقم الهاتف"
+            android:textColor="@color/applicationColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="الاسم"
+            android:textColor="@color/applicationColor"
+            android:textSize="18sp" />
+    </TableRow>
+
+</TableLayout>
+

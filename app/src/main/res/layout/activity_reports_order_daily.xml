@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.agenda.smart.restaurant.views.ReportsOrderDailyActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolabar_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/applicationColor"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            android:contentInsetStartWithNavigation="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/resturant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toLeftOf="@+id/icon"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="6dp"
+                    android:src="@drawable/restaurant_icon" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolabar_holder"
+        tools:openDrawer="start">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolabar_holder"
+            android:layout_margin="3dp"
+            android:background="@drawable/round_corner_text_view"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/current_date"
+                android:textSize="19sp"
+                android:textColor="@color/applicationColor"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/container1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight=".33"
+                        android:background="@drawable/round_corner_button"
+                        android:gravity="center"
+                        android:padding="9dp"
+                        android:text="عدد الموظفين"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight=".33"
+                        android:background="@drawable/round_corner_button"
+                        android:gravity="center"
+                        android:padding="9dp"
+                        android:text="اجمالي الخزنة"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight=".33"
+                        android:background="@drawable/round_corner_button"
+                        android:gravity="center"
+                        android:padding="9dp"
+                        android:text=" عدد الطلبات"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/container2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/earning"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight=".33"
+                        android:background="@drawable/round_corner_text_view"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:textColor="@color/applicationColor"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/total_storge"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight=".33"
+                        android:background="@drawable/round_corner_text_view"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:textColor="@color/applicationColor"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/purchase"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight=".33"
+                        android:background="@drawable/round_corner_text_view"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:textColor="@color/applicationColor"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--<HorizontalScrollView-->
+            <!--android:id="@+id/scrollView"-->
+            <!--android:layout_marginTop="4dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/search"-->
+            <!--android:layoutDirection="rtl">-->
+
+            <!--<TableLayout-->
+            <!--android:id="@+id/container"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp">-->
+
+            <!--<TableRow>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="130dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="4dp"-->
+            <!--android:background="@drawable/round_corner_button"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="التاريخ"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="18sp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="130dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="4dp"-->
+            <!--android:background="@drawable/round_corner_button"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="الحالة"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="18sp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="130dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="4dp"-->
+            <!--android:background="@drawable/round_corner_button"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="نوع الطلب"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="18sp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="130dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="4dp"-->
+            <!--android:layout_marginStart="4dp"-->
+            <!--android:background="@drawable/round_corner_button"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="المبلغ بعد الخصم"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="18sp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="130dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="4dp"-->
+            <!--android:layout_marginStart="4dp"-->
+            <!--android:background="@drawable/round_corner_button"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="مبلغ الطلب"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="18sp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="130dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="4dp"-->
+            <!--android:layout_marginStart="4dp"-->
+            <!--android:background="@drawable/round_corner_button"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="اسم الكاشير"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="18sp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="130dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="4dp"-->
+            <!--android:layout_marginStart="4dp"-->
+            <!--android:background="@drawable/round_corner_button"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="رقم الطلب"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="18sp" />-->
+
+            <!--</TableRow>-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+
+            <!--android:id="@+id/recycler_order"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="2dp">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+            <!--</TableLayout>-->
+
+            <!--</HorizontalScrollView>-->
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/nav_admin" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
